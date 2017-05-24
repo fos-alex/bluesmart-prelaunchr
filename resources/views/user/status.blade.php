@@ -13,14 +13,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6 hidden-xs">
-					<img src="{{ asset('img/status-bg2.png') }}"/>		
+					<img src="{{ asset('img/status-bg.jpg') }}"/>
 				</div>
 				<div class="col-sm-6 col-xs-12">
 					<h2>Don't&nbsp;Leave Your&nbsp;Friends&nbsp;Behind</h2>
 					<h1>Invite&nbsp;Friends&nbsp;& Earn&nbsp;Membership</h1>
 					<div class="row">
 						<div class="col-xs-12">
-							<p class="center description">Share&nbsp;your&nbsp;unique&nbsp;link&nbsp;via&nbsp;email,&nbsp;Facebook&nbsp;or&nbsp;Twitter<br/>and&nbsp;earn&nbsp;extra&nbsp;time&nbsp;on&nbsp;your&nbsp;MidwestFit&nbsp;membership<br/>for&nbsp;each&nbsp;friend&nbsp;who&nbsp;signs&nbsp;up.</p>
+							<p class="center description">Share&nbsp;your&nbsp;unique&nbsp;link&nbsp;via&nbsp;email,&nbsp;Facebook&nbsp;or&nbsp;Twitter<br/>and&nbsp;earn&nbsp;extra&nbsp;time&nbsp;on&nbsp;your&nbsp;Bluesmart&nbsp;membership<br/>for&nbsp;each&nbsp;friend&nbsp;who&nbsp;signs&nbsp;up.</p>
 						</div>
 					</div>
 					<div class="row">
@@ -42,7 +42,7 @@
 
 								<span class="separator">&nbsp;|&nbsp;</span>
 
-								<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ $user->referral_url }}" data-text="Can't wait for @midwestfit to launch. My workouts are about to go to the next level!" data-via="midwestfit" data-size="medium" data-count="none">Tweet</a>
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ $user->referral_url }}" data-text="Can't wait for @Bluesmart to launch. My workouts are about to go to the next level!" data-via="Bluesmart" data-size="medium" data-count="none">Tweet</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>	
 							</div>	
 						</div>	
@@ -58,7 +58,7 @@
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 col-xs-12">
 					<p class="center share-text">
-						MidwestFit provides goal-oriented workout programs through a seamless, easy to use interface all based around your individual health assessment as well as your fitness goals.
+						Bluesmart provides goal-oriented workout programs through a seamless, easy to use interface all based around your individual health assessment as well as your fitness goals.
 					</p>	
 				</div>	
 			</div>

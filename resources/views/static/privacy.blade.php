@@ -12,7 +12,7 @@
 	<div class="container">
 				<h2 class="center">Privacy Policy</h2>
 				<p>
-					This privacy policy discloses the privacy practices for MidwestFit.com. This privacy policy applies solely to information collected by this web site. It will notify you of the following:
+					This privacy policy discloses the privacy practices for Bluesmart.com. This privacy policy applies solely to information collected by this web site. It will notify you of the following:
 				</p>	
 
 				<ol>
@@ -46,7 +46,7 @@
 					Your Access to and Control Over Information 
 				</h3>
 				<p>
-				You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via support@midwestfit.com:
+				You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via support@Bluesmart.com:
 				</p>
 				<ul>
 					<li>
@@ -81,7 +81,7 @@
 				Our Privacy Policy may change from time to time and all updates will be posted on this page.
 				</p>
 				<p>
-				If you feel that we are not abiding by this privacy policy, you should contact us immediately at support@midwestfit.com.
+				If you feel that we are not abiding by this privacy policy, you should contact us immediately at support@Bluesmart.com.
 				</p>
 	</div>
 

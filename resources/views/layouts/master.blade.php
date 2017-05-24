@@ -7,23 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="MidwestFit changes lives by providing goal-oriented fitness programs through a seamless user experience. Get full access and start your journey today for free, with no obligation."/>
-    <meta name="author" content="MidwestFit">
+	<meta name="description" content="Bluesmart"/>
+    <meta name="author" content="Bluesmart">
 
-    <title>MidwestFit | Life Changing Fitness Programs</title>
+    <title>Bluesmart | Traveling makes you smarter</title>
 
 	@yield('og')
-	<meta property="og:image" content="{{ asset('img/mwf-og-image2.png') }}" />
-	<meta property="og:title" content="MidwestFit | Life Changing Fitness Programs" />
-	<meta property="og:description" content="MidwestFit changes lives by providing goal-oriented fitness programs through a seamless user experience. Get full access and start your journey today for free, with no obligation." />
-	<meta property="og:site_name" content="MidwestFit"/>
+	<meta property="og:image" content="{{ asset('img/mwf-og-image2.jpg') }}" />
+	<meta property="og:title" content="Bluesmart | Traveling makes you smarter" />
+	<meta property="og:description" content="Bluesmart" />
+	<meta property="og:site_name" content="Bluesmart"/>
 	<meta property="og:type" content="website"/>
 
 	   <meta name="twitter:card" content="summary" >
-    <meta name="twitter:domain" content="midwestfit.com" >
-    <meta name="twitter:site" content="@midwestfit" >
+    <meta name="twitter:domain" content="Bluesmart.com" >
+    <meta name="twitter:site" content="@Bluesmart" >
     <meta name="twitter:site:id" content="166676493">
-    <meta name="twitter:creator" content="@midwestfit" >
+    <meta name="twitter:creator" content="@Bluesmart" >
 	
 
 	<link href="{{ elixir_cachebust('css/app.css') }}" rel="stylesheet">
@@ -63,7 +63,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<p class="center">
-					Questions?  <a href="mailto:support@midwestfit.com">support@midwestfit.com</a> | <a href="{{ route('privacy') }}">Privacy Policy</a>	
+					Questions?  <a href="mailto:support@Bluesmart.com">support@Bluesmart.com</a> | <a href="{{ route('privacy') }}">Privacy Policy</a>
 					</p>	
 				</div>	
 			</div>

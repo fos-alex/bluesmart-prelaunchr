@@ -407,7 +407,7 @@
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:0;">
                         
-                            Thank you for joining MidwestFit! Please confirm your e-mail address to get started.
+                            Thank you for joining Bluesmart! Please confirm your e-mail address to get started.
                         </td>
                     </tr>
                 </tbody></table>
@@ -493,14 +493,14 @@
 			                                     
 			                                    <tbody><tr>
 			                                        <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:5px;">
-			                                            <a href="http://www.facebook.com/midwestfit" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+			                                            <a href="http://www.facebook.com/Bluesmart" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
 			                                        </td>
 			                                    </tr>
 			                                    
 			                                    
 			                                    <tr>
 			                                        <td align="center" valign="top" class="mcnFollowTextContent" style="padding-right:10px; padding-bottom:9px;">
-			                                            <a href="http://www.facebook.com/midwestfit" target="_blank" style="color: #606060;font-family: Arial;font-size: 11px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;">Facebook</a>
+			                                            <a href="http://www.facebook.com/Bluesmart" target="_blank" style="color: #606060;font-family: Arial;font-size: 11px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;">Facebook</a>
 			                                        </td>
 			                                    </tr>
 			                                    
@@ -517,14 +517,14 @@
 			                                     
 			                                    <tbody><tr>
 			                                        <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:5px;">
-			                                            <a href="http://www.twitter.com/midwestfit" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-96.png" alt="Twitter" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+			                                            <a href="http://www.twitter.com/Bluesmart" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-96.png" alt="Twitter" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
 			                                        </td>
 			                                    </tr>
 			                                    
 			                                    
 			                                    <tr>
 			                                        <td align="center" valign="top" class="mcnFollowTextContent" style="padding-right:10px; padding-bottom:9px;">
-			                                            <a href="http://www.twitter.com/midwestfit" target="_blank" style="color: #606060;font-family: Arial;font-size: 11px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;">Twitter</a>
+			                                            <a href="http://www.twitter.com/Bluesmart" target="_blank" style="color: #606060;font-family: Arial;font-size: 11px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;">Twitter</a>
 			                                        </td>
 			                                    </tr>
 			                                    
@@ -541,14 +541,14 @@
 			                                     
 			                                    <tbody><tr>
 			                                        <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:0; padding-bottom:5px;">
-			                                            <a href="http://www.midwestfit.com" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-link-96.png" alt="Website" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+			                                            <a href="http://www.Bluesmart.com" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-link-96.png" alt="Website" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
 			                                        </td>
 			                                    </tr>
 			                                    
 			                                    
 			                                    <tr>
 			                                        <td align="center" valign="top" class="mcnFollowTextContent" style="padding-right:0; padding-bottom:9px;">
-			                                            <a href="http://www.midwestfit.com" target="_blank" style="color: #606060;font-family: Arial;font-size: 11px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;">Website</a>
+			                                            <a href="http://www.Bluesmart.com" target="_blank" style="color: #606060;font-family: Arial;font-size: 11px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;">Website</a>
 			                                        </td>
 			                                    </tr>
 			                                    
@@ -594,7 +594,7 @@
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;">
                         
-							<em>Copyright © {{ date('Y') }} MidwestFit, LLC All rights reserved.</em><br>
+							<em>Copyright © {{ date('Y') }} Bluesmart, LLC All rights reserved.</em><br>
                         </td>
                     </tr>
                 </tbody></table>

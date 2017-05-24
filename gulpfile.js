@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-require('laravel-elixir-cachebust');
+//require('laravel-elixir-cachebust');
 
 /*
  |--------------------------------------------------------------------------
@@ -22,9 +22,9 @@ elixir(function(mix) {
 		"app.js"
 	]);
 
-	mix.cachebust(["css/app.css", "js/all.js"],
+	/*mix.cachebust(["css/app.css", "js/all.js"],
 		{
 			file: "hashmap.json"
 		}
-	);
+	);*/
 });

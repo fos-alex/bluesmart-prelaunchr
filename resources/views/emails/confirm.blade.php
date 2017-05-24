@@ -2,11 +2,11 @@
 
 @section('content')
 
-                            <h1>Welcome to MidwestFit!</h1>
+                            <h1>Welcome to Bluesmart!</h1>
 
 <h3>Confirm your e-mail address and start earning rewards today.</h3>
 
-<p><span style="color: #000000;font-family: helvetica;font-size: 12px;line-height: normal;">Thank you for signing up. We cannot wait to help you reach your fitness goals! Please follow the instructions below to get started.<br>
+<p><span style="color: #000000;font-family: helvetica;font-size: 12px;line-height: normal;">Thank you for signing up. Please follow the instructions below to get started.<br>
 <br>
 <strong>Click the link below&nbsp;to confirm your email address:</strong></span><br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
 <br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">

@@ -3,3 +3,4 @@
 .env
 *.un~
 .DS_Store
+.idea
