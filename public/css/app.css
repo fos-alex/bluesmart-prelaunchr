@@ -879,7 +879,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1158,6 +1158,9 @@ a.text-warning:hover {
 }
 a.text-danger:hover {
   color: #843534;
+}
+.bg-black {
+  background-color: black;
 }
 .bg-primary {
   color: #fff;
@@ -5487,7 +5490,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5594,7 +5597,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6239,8 +6242,6 @@ html {
   height: 100%;
 }
 body {
-  padding-top: 75px;
-  /*background: @color-secondary;*/
   height: 100%;
 }
 .center {
@@ -6257,6 +6258,10 @@ a:hover {
   color: #868686;
   text-decoration: none;
 }
+p {
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
 footer {
   background: #d3d3d3;
   margin-top: 50px;
@@ -6266,17 +6271,54 @@ footer p {
   margin: 0;
   color: #333;
 }
+h1 {
+  font-family: "SharpSansNo1", "AvenirNext-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Font families
+/*******************/
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/AvenirNext.ttc");
+}
+@font-face {
+  font-family: "AvenirNext-Regular";
+  src: url("../fonts/AvenirNext-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "AvenirNext-Medium";
+  src: url("../fonts/AvenirNext-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../fonts/AvenirNext-Bold.ttf");
+}
+@font-face {
+  font-family: "AvenirNext-BoldItalic";
+  src: url("../fonts/AvenirNext-BoldItalic.ttf") format('truetype');
+}
+@font-face {
+  font-family: "AvenirNext-DemiBold";
+  src: url("../fonts/AvenirNext-DemiBold.ttf") format('truetype');
+}
+@font-face {
+  font-family: "AvenirNext-DemiBoldItalic";
+  src: url("../fonts/AvenirNext-DemiBoldItalic.ttf") format('truetype');
+}
+@font-face {
+  font-family: "SharpSansNo1";
+  src: url("../fonts/SharpSansNo1-Extrabold.otf");
+}
 header h1,
 header h2 {
   font-size: 35px;
   font-weight: 500;
   margin-bottom: 0;
   text-align: center;
-  text-transform: uppercase;
 }
 header h1 {
   margin-top: 200px;
   color: #fff;
+  font-size: 50px;
 }
 @media (max-width: 767px) {
   header h1 {
@@ -6301,44 +6343,53 @@ header h3 {
   }
 }
 .navbar {
-  background-color: #333;
+  background-color: transparent;
   border: none;
+  padding-top: 30px;
 }
 .navbar img {
   max-height: 50px;
 }
-.navbar .navbar-header {
-  height: 75px;
+.navbar .navbar-brand {
+  padding-left: 60px;
 }
-.navbar .navbar-header .navbar-brand {
-  position: absolute;
-  left: 50%;
-  margin-left: -70px;
+.navbar .hashtag {
+  color: white;
+  font-family: "AvenirNext-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 60px;
+  padding-right: 65px;
+}
+.navbar .navbar-hash {
+  color: white;
 }
 body.user-create header {
   position: relative;
   height: 100%;
 }
 @media (max-width: 767px) {
+  body.user-create header h1 {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 767px) {
   body.user-create header {
     min-height: 550px;
   }
 }
-body.user-create header .bg {
-  background: url('/img/landing-bg.jpg') center center no-repeat fixed;
-  position: absolute;
+body.user-create header .main-container {
+  background: url('/img/main-bg-1.jpg') center center no-repeat fixed;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  background-color: black;
 }
-@media (max-width: 767px) {
-  body.user-create header .bg {
-    filter: brightness(40%) contrast(70%);
+@media (max-width: 1199px) {
+  body.user-create header .main-container {
+    background-size: contain;
   }
 }
 body.user-create header p {
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
-  font-size: 1.2rem;
   margin-top: 20px;
 }
 @media (max-width: 767px) {
@@ -6347,12 +6398,20 @@ body.user-create header p {
   }
 }
 body.user-create header p.share-text {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 100px;
+  color: #58595b;
+}
+body.user-create header p.subtitle {
+  padding: 15px 0;
 }
 body.user-create header form {
   margin-top: 20px;
   text-align: center;
+}
+body.user-create header form .form-group {
+  max-width: 100%;
 }
 body.user-create header form .form-control {
   display: inline;
@@ -6362,42 +6421,93 @@ body.user-create header form span.error {
   margin-bottom: 5px;
 }
 body.user-create header form input {
-  margin: 0 5px;
+  border: 2px solid white;
+  border-radius: 0;
+  background: black;
+  height: 44px;
 }
 body.user-create header form input[type="email"] {
-  min-width: 240px;
+  width: 400px;
+  max-width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body.user-create header form input[type="submit"] {
     margin-top: 10px;
-    min-width: 240px;
+    width: 240px;
+    max-width: 100%;
   }
+}
+body.user-create header form .btn.btn-bluesmart {
+  background: white;
+  color: black;
+  font-family: 'AvenirNext-Medium';
+  text-transform: none;
+  height: 44px;
+  margin-left: -5px;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body.user-create header form .btn.btn-bluesmart:after {
+  content: "";
+  position: absolute;
+  height: 56%;
+  width: rem(36px);
+  bottom: rem(5px);
+  margin-left: rem(20px);
+  background: url('/public/img/arrow-black.png') no-repeat;
+  background-size: contain;
+}
+body.user-create .terms-container {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+body.user-create .terms-container .terms {
+  color: #616161;
+  font-size: 12px;
+  text-decoration: underline;
 }
 body.user-create footer {
   margin: 0;
 }
 body.user-status header {
-  background: #ececec;
+  background: url('/img/BG-2.png');
+  background-position-x: 35%;
+  background-position-y: -80%;
+  background-repeat: no-repeat;
+  background-color: black;
   min-height: 600px;
 }
-body.user-status header img {
-  max-height: 600px;
-  margin: 20px 0 0;
+@media (max-width: 991px) {
+  body.user-status header {
+    background-position-y: -110%;
+  }
+}
+@media (max-width: 767px) {
+  body.user-status header {
+    background-position-y: -80%;
+  }
+}
+body.user-status header .main-container {
+  padding-top: 60px;
 }
 body.user-status header h1 {
   margin-top: 30px;
   line-height: 44px;
   font-weight: 700;
+  font-family: "SharpSansNo1", "AvenirNext-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body.user-status header h2 {
   margin-top: 60px;
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
+  font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body.user-status header p.description {
   margin: 30px 0 50px;
-  color: #fff;
+  color: #898989;
   font-weight: 300;
+  font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body.user-status header button {
   text-transform: none;
@@ -6410,10 +6520,24 @@ body.user-status header button:focus {
   text-decoration: none;
 }
 body.user-status header span.linktext {
-  background: #fff;
-  border: 1px solid #333;
+  background: rgba(112, 112, 112, 0.4);
   border-radius: 3px;
-  padding: 10px;
+  border: solid 1px #707070;
+  font-size: 14px;
+  padding: 12px 45px;
+  color: white;
+}
+body.user-status header p.copy {
+  color: #f6f6f6;
+  font-size: 12px;
+}
+body.user-status header .btn-link {
+  color: #f6f6f6;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "SharpSansNo1", "AvenirNext-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  padding-left: 0;
 }
 body.user-status header .social {
   display: block;
@@ -6428,9 +6552,6 @@ body.user-status header .social .twitter-share-button {
   bottom: -4px;
 }
 @media (max-width: 767px) {
-  body.user-status header {
-    background: #adadad;
-  }
   body.user-status header .bg {
     background: url('/img/status-bg2.png') top center no-repeat scroll;
     position: absolute;
@@ -6440,15 +6561,11 @@ body.user-status header .social .twitter-share-button {
     max-height: 600px;
     filter: brightness(40%) contrast(70%);
   }
-  body.user-status header p.description,
-  body.user-status header h2 {
-    color: #fff;
-  }
 }
 body.user-status section h2 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 24px;
+  color: #333333;
+  font-size: 36px;
+  font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body.user-status section .offset-left > span {
   position: relative;
@@ -6491,7 +6608,7 @@ body.user-status section .progress {
   margin-top: 15px;
 }
 body.user-status section .progress .progress-bar {
-  background-color: #333;
+  background-color: #001eff;
 }
 body.user-status section .rewards span,
 body.user-status section .referrals span {

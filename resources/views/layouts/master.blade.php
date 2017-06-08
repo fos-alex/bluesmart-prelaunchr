@@ -19,7 +19,7 @@
 	<meta property="og:site_name" content="Bluesmart"/>
 	<meta property="og:type" content="website"/>
 
-	   <meta name="twitter:card" content="summary" >
+    <meta name="twitter:card" content="summary" >
     <meta name="twitter:domain" content="Bluesmart.com" >
     <meta name="twitter:site" content="@Bluesmart" >
     <meta name="twitter:site:id" content="166676493">
@@ -57,18 +57,6 @@
 	@include('layouts._facebook')
 
 	@yield('content')
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="center">
-					Questions?  <a href="mailto:support@Bluesmart.com">support@Bluesmart.com</a> | <a href="{{ route('privacy') }}">Privacy Policy</a>
-					</p>	
-				</div>	
-			</div>
-		</div>
-	</footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 

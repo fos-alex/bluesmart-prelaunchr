@@ -1,31 +1,42 @@
 body.user-status {
 
 	header {
-
-		background: @color-lightgrey;
+		background: url('/img/BG-2.png');
+		background-position-x: 35%;
+		background-position-y: -80%;
+		@media(max-width: @screen-sm-max) {
+			background-position-y: -110%;
+		}
+		@media(max-width: @screen-xs-max) {
+			background-position-y: -80%;
+		}
+		background-repeat: no-repeat;
+		background-color: black;
 		min-height: 600px;
 
-		img {
-			max-height: 600px;
-			margin: 20px 0 0;
+		.main-container {
+			padding-top: 60px;
 		}
 
 		h1 {
 			margin-top: 30px;
 			line-height: 44px; 
 			font-weight: 700;
+			font-family: @font-family-title;
 		}
 
 		h2 {
 			margin-top: 60px;
 			color: @color-white;
-			font-size: 24px;
+			font-size: 16px;
+			font-family: @font-family-base;
 		}
 
 		p.description {
 			margin: 30px 0 50px;
-			color: @color-white;
+			color: #898989;
 			font-weight: 300;
+			font-family: @font-family-smaller-title;
 		}
 
 		button {
@@ -40,10 +51,26 @@ body.user-status {
 		}
 
 		span.linktext {
-			background: #fff;
-			border: 1px solid @color-secondary;
+			background: rgba(112, 112, 112, 0.4);
 			border-radius: @border-radius-small;
-			padding: 10px;
+			border: solid 1px #707070;
+			font-size: 14px;
+			padding: 12px 45px;
+			color: white;
+		}
+
+		p.copy {
+			color: #f6f6f6;
+			font-size: 12px;
+		}
+
+		.btn-link {
+			color: #f6f6f6;
+			font-weight: bold;
+			font-size: 12px;
+			font-family: @font-family-title;
+			text-decoration: underline;
+			padding-left: 0;
 		}
 
 		.social {
@@ -63,26 +90,15 @@ body.user-status {
 
 		@media(max-width: @screen-xs-max) {
 
-			background: @color-darkgrey;
-
 			.bg {
 				background: url('/img/status-bg2.png') top center no-repeat scroll;
 				position: absolute;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
 				background-size: cover;
 				width: 100%;
 				height:100%;
 				max-height: 600px;
 
-				-webkit-filter: brightness(40%) contrast(70%);
 				filter: brightness(40%) contrast(70%);
-			}
-
-			p.description, 
-			h2 {
-				color: #fff;
 			}
 		}
 
@@ -91,9 +107,9 @@ body.user-status {
 	section {
 
 		h2 {
-			color: @color-white;
-			text-transform: uppercase;
-			font-size: 24px;
+			color: #333333;
+			font-size: 36px;
+			font-family: @font-family-smaller-title;
 		}
 
 		.offset-left>span {
@@ -145,7 +161,7 @@ body.user-status {
 			margin-top: 15px;
 
 			.progress-bar {
-				background-color: @color-secondary;
+				background-color: #001eff;
 			}
 		}
 

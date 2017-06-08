@@ -9,27 +9,26 @@
 	@include('flash::message')
 
 	<header>
-		<div class="bg"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6 hidden-xs">
-					<img src="{{ asset('img/status-bg.jpg') }}"/>
-				</div>
-				<div class="col-sm-6 col-xs-12">
-					<h2>Don't&nbsp;Leave Your&nbsp;Friends&nbsp;Behind</h2>
-					<h1>Invite&nbsp;Friends&nbsp;& Earn&nbsp;Membership</h1>
+				<div class="col-sm-offset-2 col-sm-8 col-xs-12 main-container">
+					<h2>You’re now on our exclusive guest list.</h2>
+					<h1>Invite your friends<br>
+						& earn special rewards</h1>
 					<div class="row">
 						<div class="col-xs-12">
-							<p class="center description">Share&nbsp;your&nbsp;unique&nbsp;link&nbsp;via&nbsp;email,&nbsp;Facebook&nbsp;or&nbsp;Twitter<br/>and&nbsp;earn&nbsp;extra&nbsp;time&nbsp;on&nbsp;your&nbsp;Bluesmart&nbsp;membership<br/>for&nbsp;each&nbsp;friend&nbsp;who&nbsp;signs&nbsp;up.</p>
+							<p class="center description">Share your personalized link below via email, Facebook or, Twitter with your friends to unlock
+								some special, limited edition gifts. The more you share, the more perks you get...it’s that simple!</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12">
 							<p class="center">
 								<span class="linktext">{{ $user->referral_url }}</span>
-							</p>	
-							<p class="center">
-								<button id="copy-button" data-clipboard-text="{{ $user->referral_url }}" title="Click to copy" class="btn btn-link">(copy to clipboard)</button>
+							</p>
+							<p class="center copy">
+								<span>Or share via a public link</span>
+								<button id="copy-button" data-clipboard-text="{{ $user->referral_url }}" title="Click to copy" class="btn btn-link">Copy to clipboard</button>
 								<span style="display:none;" id="copy-confirmation"><br/>Copied!</span>
 							</p>
 						</div>	
@@ -56,21 +55,23 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2 col-xs-12">
-					<p class="center share-text">
-						Bluesmart provides goal-oriented workout programs through a seamless, easy to use interface all based around your individual health assessment as well as your fitness goals.
-					</p>	
-				</div>	
-			</div>
-			<div class="row">
 				<div class="col-xs-12">
-					<h2 class="center">Here's How It Works:</h2>	
+					<h2 class="center">Unlock your exclusive gifts by referring friends</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="{{ $referral_count + 1 }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ $progress_percent }}%">
+							<span class="sr-only"></span>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div class="row referrals">
-				<div class="col-xs-2 col-xs-offset-1"><span class="axis">Friends Joined</span></div>
-				<div class="col-xs-2">
+				<div class="col-xs-2 col-xs-offset-3">
 					<div class="reward-level">
 						<img src="{{ asset('img/0friends.png') }}" /><span>You</span>
 					</div>
@@ -88,16 +89,6 @@
 				<div class="col-xs-2">
 					<div class="reward-level {{ $referral_count >= 3 ? '' : 'dimmed' }}">
 						<img class="" src="{{ asset('img/3friends.png') }}" /><span>3+</span>
-					</div>
-				</div>	
-			</div>
-
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1">
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="{{ $referral_count + 1 }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ $progress_percent }}%">
-							<span class="sr-only"></span>
-						</div>
 					</div>
 				</div>	
 			</div>

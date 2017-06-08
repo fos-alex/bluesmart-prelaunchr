@@ -1,5 +1,12 @@
 body.user-create {
 	header {
+
+		h1 {
+			@media(max-width: @screen-xs-max) {
+				margin-top: 140px;
+			}
+		}
+
 		position: relative;
 		height: 100%;
 
@@ -7,25 +14,18 @@ body.user-create {
 			min-height: 550px;
 		}
 
-		.bg {
-			background: url('/img/landing-bg.jpg') center center no-repeat fixed;
-			position: absolute;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
+		.main-container {
+			background: url('/img/main-bg-1.jpg') center center no-repeat fixed;
 			background-size: cover;
-			width: 100%;
-			height:100%;
-
-			@media(max-width: @screen-xs-max) {
-				-webkit-filter: brightness(40%) contrast(70%);
-				filter: brightness(40%) contrast(70%);
+			background-color: black;
+			@media(max-width: @screen-md-max) {
+				background-size: contain;
 			}
 		}
 
 		p {
+			font-family: @font-family-base;
 			color: @color-white;
-			font-size: 1.2rem;
 			margin-top: 20px;
 
 			@media(max-width: @screen-xs-max) {
@@ -33,14 +33,24 @@ body.user-create {
 			}
 
 			&.share-text {
-				font-size: 1.3rem;
-				font-weight: 700;
+				font-family: @font-family-base;
+				font-size: 12px;
+				margin-top: 100px;
+				color: #58595b;
+			}
+
+			&.subtitle {
+				padding: 15px 0;
 			}
 		}
 
 		form {
 			margin-top: 20px;
 			text-align: center;
+
+			.form-group {
+				max-width: 100%;
+			}
 
 			.form-control {
 				display:inline;
@@ -52,21 +62,59 @@ body.user-create {
 			}
 
 			input {
-				margin: 0 5px;
+				border: 2px solid white;
+				border-radius: 0;
+				background: black;
+				height: 44px;
 
 				&[type="email"] {
-					min-width: 240px;
+					width: 400px;
+					max-width: 100%;
 				}
 
-				@media(max-width: @screen-xs-max) {
+				@media(max-width: @screen-sm-max) {
 					&[type="submit"] {
 						margin-top: 10px;
-						min-width: 240px;
+						width: 240px;
+						max-width: 100%;
 					}
+				}
+			}
+
+			.btn.btn-bluesmart {
+				background: white;
+				color: black;
+				font-family: 'AvenirNext-Medium';
+				text-transform: none;
+				height: 44px;
+				margin-left: -5px;
+				font-weight: bold;
+				padding-left: 30px;
+				padding-right: 30px;
+				&:after {
+					content: "";
+					position: absolute;
+					height: 56%;
+					width: rem(36px);
+					bottom: rem(5px);
+					margin-left: rem(20px);
+					background: url('/public/img/arrow-black.png') no-repeat;
+					background-size: contain;
 				}
 			}
 		}
 
+	}
+
+
+	.terms-container {
+		padding-top: 80px;
+		padding-bottom: 40px;
+		.terms {
+			color: #616161;
+			font-size: 12px;
+			text-decoration: underline;
+		}
 	}
 
 	footer {
