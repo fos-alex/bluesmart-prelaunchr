@@ -3,19 +3,19 @@ body.user-status {
 	header {
 		background: url('/img/BG-2.png');
 		background-position-x: 35%;
-		background-position-y: -80%;
+		background-position-y: -120%;
 		@media(max-width: @screen-sm-max) {
-			background-position-y: -110%;
+			background-position-y: -130%;
 		}
 		@media(max-width: @screen-xs-max) {
-			background-position-y: -80%;
+			background-position-y: -120%;
 		}
 		background-repeat: no-repeat;
 		background-color: black;
-		min-height: 600px;
+		min-height: 720px;
 
 		.main-container {
-			padding-top: 60px;
+			padding-top: 80px;
 		}
 
 		h1 {
@@ -33,10 +33,10 @@ body.user-status {
 		}
 
 		p.description {
-			margin: 30px 0 50px;
+			margin: 50px 0 60px;
 			color: #898989;
 			font-weight: 300;
-			font-family: @font-family-smaller-title;
+			font-family: @font-family-light;
 		}
 
 		button {
@@ -62,6 +62,20 @@ body.user-status {
 		p.copy {
 			color: #f6f6f6;
 			font-size: 12px;
+			font-family: 'SharpSansNo1-Medium';
+			span {
+				position: relative;
+				&:before {
+					content: ' ';
+					position: absolute;
+					left: 1px;
+					background-image: url('/img/copy.svg');
+					width: 16px;
+					height: 16px;
+					left: -21px;
+					bottom: 1px;
+				}
+			}
 		}
 
 		.btn-link {
@@ -75,7 +89,7 @@ body.user-status {
 
 		.social {
 			display: block;
-			margin: 30px auto;
+			margin: 40px auto;
 			width: 134px;
 
 			.separator {
@@ -84,7 +98,15 @@ body.user-status {
 
 			.twitter-share-button {
 				position: relative !important;
-				bottom: -4px;
+				float: right;
+				transform: scale(1.7);
+				transform-origin: top left;
+			}
+
+			.fb-share-button {
+				float: left;
+				transform: scale(1.7);
+				transform-origin: top right;
 			}
 		}
 
@@ -104,12 +126,35 @@ body.user-status {
 
 	}
 
+	.scroll-container,
+	.isologo-container {
+		position: absolute;
+		left: 50%;
+		padding-top: 39px;
+		.scroll-icon,
+		.isologo-icon {
+			position: relative;
+			left: -50%;
+			width: 44px;
+		}
+
+		.scroll-icon {
+			cursor: pointer;
+		}
+
+		.isologo-icon {
+			width: 28px;
+			margin-bottom: 30px;
+		}
+	}
+
 	section {
 
 		h2 {
 			color: #333333;
 			font-size: 36px;
 			font-family: @font-family-smaller-title;
+			margin-top: 70px;
 		}
 
 		.offset-left>span {
@@ -127,19 +172,27 @@ body.user-status {
 		}
 
 		p {
-			color: @color-white;
-			font-weight: 500;
+			color: @color-primary;
 
 			span.number {
-				color: @color-darkprimary;
+				color: @color-primary;
 			}
 
 			&.referral-count {
 				margin-top: 30px;
+				margin-bottom: 30px;
 			}
 
 			&.text-muted {
-				color: @color-darkergrey;
+				color: #898989;
+				font-size: 14px;
+				font-family: @font-family-light;
+				margin-top: 20px;
+				margin-bottom: 0;
+
+				&.no-margin {
+					margin: 0;
+				}
 			}
 
 			&.share-text {
@@ -156,59 +209,82 @@ body.user-status {
 		}
 
 		.progress {
-
 			height: 5px;
 			margin-top: 15px;
-
 			.progress-bar {
-				background-color: #001eff;
+				background-color: @color-primary;
 			}
 		}
 
 		.rewards,
 		.referrals {
 
-			span {
-				color: @color-white;
+			.rewards-container > div ,
+			.referrals-container > div {
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+
+			span, p {
+				color: @color-primary;
+				font-size: 14px;
+				font-family: @font-family-base;
+				strong {
+					font-family: @font-family-bold;
+				}
 
 				&.axis {
 					color: @color-darkprimary;
 				}
 			}
 
+			p.referral-bound {
+				color: @color-secondary;
+				margin-top: 10px;
+			}
+
 			.reward-level {
 				position: relative;
-				left: -15%;
 
 				img {
 					max-width: 40px;
 
 				}
 
-					span {
-						display: inline-block;
-						margin-left: 10px;
-					}
+				span {
+					display: inline-block;
+					margin-left: 10px;
+				}
+
+
+				.blue-dot {
+					border-radius: 50%;
+					border: 4px solid #001eff;
+					width: 16px;
+					height: 16px;
+					display: inline-block;
+					position: absolute;
+					top: 63px;
+					z-index: 2;
+					left: 48px;
+				}
 
 				&.dimmed {
-
 					span {
 						color: @color-darkergrey;
 					}
 
 					img {
-						-webkit-filter: opacity(20%);
 						filter: opacity(20%);
-						filter: alpha(opacity=20);
+					}
+
+					.blue-dot {
+						filter: opacity(20%);
 					}
 				}
 
 			}
 
-			span:not(.axis) {
-				font-weight: 700;
-				font-size: 1.1rem;
-			}
 		}
 
 		.referrals {
@@ -225,4 +301,23 @@ body.user-status {
 			}
 		}
 	}
+
+	.terms-container {
+		margin-top: 40px;
+		margin-bottom: 10px;
+		.terms {
+			font-family: @font-family-light;
+			font-size: 12px;
+			color: @color-primary;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+	}
+
+	.gray-row {
+		background-color: #ededed;
+		height: 100px;
+		margin-top: 20px;
+	}
 }
+
