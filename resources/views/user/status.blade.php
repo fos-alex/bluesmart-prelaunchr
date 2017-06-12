@@ -38,7 +38,7 @@
 						<div class="col-xs-12">
 							<div class="social">
 								<div class="fb-share-button" data-href="{{ $user->referral_url }}" data-layout="button"></div>
-								<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ $user->referral_url }}" data-text="Can't wait for @Bluesmart to launch. My workouts are about to go to the next level!" data-via="Bluesmart" data-size="medium" data-count="none">Tweet</a>
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ $user->referral_url }}" data-text="Can't wait for @Bluesmart to launch." data-via="Bluesmart" data-size="medium" data-count="none">Tweet</a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 							</div>
 						</div>
@@ -87,7 +87,7 @@
 			<div class="col-xs-8 col-xs-offset-2">
 				<div class="row referrals-container">
 					<div class="col-xs-2 text-center">
-						<div class="reward-level {{ $referral_count >= 0 ? '' : 'dimmed' }}">
+						<div class="reward-level {{ $referral_count >= $rewards[0]->num_referrals ? '' : 'dimmed' }}">
 							<img class="" src="{{ asset('img/0friends.svg') }}" />
 							<div class="blue-dot"></div>
 						</div>

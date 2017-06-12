@@ -66,10 +66,15 @@ body.user-create {
 				border-radius: 0;
 				background: black;
 				height: 44px;
+				color: white;
 
 				&[type="email"] {
 					width: 400px;
 					max-width: 100%;
+				}
+
+				&:focus {
+					border-color: white;
 				}
 
 				@media(max-width: @screen-sm-max) {

@@ -17,4 +17,9 @@ $(function() {
 			});
 		});
 	}
+
+	$('.scroll-icon').on('click', function () {
+        $("html, body").animate({ scrollTop: $(document).height() });
+		return false;
+    });
 });	

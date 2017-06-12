@@ -26,5 +26,9 @@ Route::get('/privacy', [ 'as' => 'privacy', function() {
 
 Route::get('/', [ 'as' => 'user.create', 'middleware' => 'status-page', 'uses' => 'UsersController@create' ]);
 Route::get('/homepage', [ 'as' => 'user.create.nostatus', 'uses' => 'UsersController@create' ]);
+Route::get('/mail', function () {
+    return view('emails.confirm2');
+});
+
 Route::post('/', [ 'as' => 'user.store', 'uses' => 'UsersController@store' ]);
 Route::get('/{referrer_code}', [ 'as' => 'user.referral', 'uses' => 'UsersController@referral' ]);
