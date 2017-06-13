@@ -1,5 +1,6 @@
 body.user-create {
 	header {
+		background-color: black;
 
 		h1 {
 			@media(max-width: @screen-xs-max) {
@@ -69,7 +70,7 @@ body.user-create {
 				color: white;
 
 				&[type="email"] {
-					width: 400px;
+					width: 300px;
 					max-width: 100%;
 				}
 
@@ -96,15 +97,26 @@ body.user-create {
 				font-weight: bold;
 				padding-left: 30px;
 				padding-right: 30px;
+				border-radius: 0;
+			}
+
+			.btn.btn-arrow {
+				padding-right: 55px;
 				&:after {
-					content: "";
+					content: " ";
 					position: absolute;
-					height: 56%;
-					width: rem(36px);
-					bottom: rem(5px);
-					margin-left: rem(20px);
-					background: url('/public/img/arrow-black.png') no-repeat;
+					width: 36px;
+					height: 10px;
+					bottom: 17px;
+					margin-left: 5px;
+					background: url('/img/arrow-black.png') no-repeat;
 					background-size: contain;
+				}
+
+				@media(max-width: @screen-xs-max) {
+					width: 87%;
+					margin-left: 1px;
+					max-width: 300px;
 				}
 			}
 		}

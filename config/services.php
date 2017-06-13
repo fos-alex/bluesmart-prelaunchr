@@ -15,7 +15,7 @@ return [
 	*/
 
 	'mailgun' => [
-		'domain' => 'midwestfit.com',
+		'domain' => 'bluesmart.com',
 		'secret' => env('MAILGUN_SECRET'),
 	],
 

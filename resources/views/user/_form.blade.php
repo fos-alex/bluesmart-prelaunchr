@@ -3,6 +3,6 @@
 	<div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
 		{!! Form::email('email', null, [ 'class' => 'form-control', 'placeholder' => 'Enter your email...' ]) !!}
 	</div>
-	{!! Form::submit('Step inside!', [ 'class' => 'btn btn-bluesmart' ]) !!}
+	{!! Form::button('Step inside!', [ 'class' => 'btn btn-bluesmart btn-arrow', 'type' => 'submit' ]) !!}
 {!! Form::close() !!}
 

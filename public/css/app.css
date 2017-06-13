@@ -6416,27 +6416,41 @@ header h3 {
   }
 }
 .navbar {
-  background-color: transparent;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
   border: none;
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 .navbar img {
   max-height: 50px;
 }
 .navbar .navbar-brand {
   padding-left: 60px;
+  padding-top: 0;
 }
-.navbar .hashtag {
+@media (max-width: 767px) {
+  .navbar .hashtag-container {
+    text-align: center;
+  }
+}
+.navbar .hashtag-container .hashtag {
   color: white;
   font-family: "AvenirNext-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 60px;
   padding-right: 65px;
 }
+@media (max-width: 767px) {
+  .navbar .hashtag-container .hashtag {
+    padding-right: 0;
+  }
+}
 .navbar .navbar-hash {
   color: white;
 }
 body.user-create header {
+  background-color: black;
   position: relative;
   height: 100%;
 }
@@ -6501,7 +6515,7 @@ body.user-create header form input {
   color: white;
 }
 body.user-create header form input[type="email"] {
-  width: 400px;
+  width: 300px;
   max-width: 100%;
 }
 body.user-create header form input:focus {
@@ -6524,16 +6538,27 @@ body.user-create header form .btn.btn-bluesmart {
   font-weight: bold;
   padding-left: 30px;
   padding-right: 30px;
+  border-radius: 0;
 }
-body.user-create header form .btn.btn-bluesmart:after {
-  content: "";
+body.user-create header form .btn.btn-arrow {
+  padding-right: 55px;
+}
+body.user-create header form .btn.btn-arrow:after {
+  content: " ";
   position: absolute;
-  height: 56%;
-  width: rem(36px);
-  bottom: rem(5px);
-  margin-left: rem(20px);
-  background: url('/public/img/arrow-black.png') no-repeat;
+  width: 36px;
+  height: 10px;
+  bottom: 17px;
+  margin-left: 5px;
+  background: url('/img/arrow-black.png') no-repeat;
   background-size: contain;
+}
+@media (max-width: 767px) {
+  body.user-create header form .btn.btn-arrow {
+    width: 87%;
+    margin-left: 1px;
+    max-width: 300px;
+  }
 }
 body.user-create .terms-container {
   padding-top: 80px;
@@ -6580,11 +6605,21 @@ body.user-status header h2 {
   font-size: 16px;
   font-family: "AvenirNext-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+@media (max-width: 767px) {
+  body.user-status header h2 {
+    margin-top: 20px;
+  }
+}
 body.user-status header p.description {
   margin: 50px 0 60px;
   color: #898989;
   font-weight: 300;
   font-family: "AvenirNext-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 767px) {
+  body.user-status header p.description {
+    margin: 20px 0 30px;
+  }
 }
 body.user-status header button {
   text-transform: none;
@@ -6736,6 +6771,12 @@ body.user-status section .progress {
   height: 5px;
   margin-top: 15px;
 }
+@media (max-width: 767px) {
+  body.user-status section .progress {
+    transform: rotate(90deg) translateY(145px) translateX(200px);
+    width: 360px;
+  }
+}
 body.user-status section .progress .progress-bar {
   background-color: #001eff;
 }
@@ -6745,6 +6786,14 @@ body.user-status section .rewards .referrals-container > div,
 body.user-status section .referrals .referrals-container > div {
   padding-right: 10px;
   padding-left: 10px;
+}
+@media (max-width: 767px) {
+  body.user-status section .rewards .rewards-container > div,
+  body.user-status section .referrals .rewards-container > div,
+  body.user-status section .rewards .referrals-container > div,
+  body.user-status section .referrals .referrals-container > div {
+    margin-top: 5px;
+  }
 }
 body.user-status section .rewards span,
 body.user-status section .referrals span,
@@ -6775,6 +6824,12 @@ body.user-status section .rewards .reward-level,
 body.user-status section .referrals .reward-level {
   position: relative;
 }
+@media (max-width: 767px) {
+  body.user-status section .rewards .reward-level,
+  body.user-status section .referrals .reward-level {
+    margin-top: 30px;
+  }
+}
 body.user-status section .rewards .reward-level img,
 body.user-status section .referrals .reward-level img {
   max-width: 40px;
@@ -6793,8 +6848,16 @@ body.user-status section .referrals .reward-level .blue-dot {
   display: inline-block;
   position: absolute;
   top: 63px;
-  z-index: 2;
+  z-index: 1;
   left: 48px;
+}
+@media (max-width: 767px) {
+  body.user-status section .rewards .reward-level .blue-dot,
+  body.user-status section .referrals .reward-level .blue-dot {
+    top: 12px;
+    right: -69px;
+    left: inherit;
+  }
 }
 body.user-status section .rewards .reward-level.dimmed span,
 body.user-status section .referrals .reward-level.dimmed span {

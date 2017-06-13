@@ -27,7 +27,10 @@ Route::get('/privacy', [ 'as' => 'privacy', function() {
 Route::get('/', [ 'as' => 'user.create', 'middleware' => 'status-page', 'uses' => 'UsersController@create' ]);
 Route::get('/homepage', [ 'as' => 'user.create.nostatus', 'uses' => 'UsersController@create' ]);
 Route::get('/mail', function () {
-    return view('emails.confirm2');
+    return view('emails.confirm', [ 'token' => 'asdasd']);
+});
+Route::get('/status-mail', function () {
+    return view('emails.status', [ 'secret' => 'asdasd1']);
 });
 
 Route::post('/', [ 'as' => 'user.store', 'uses' => 'UsersController@store' ]);

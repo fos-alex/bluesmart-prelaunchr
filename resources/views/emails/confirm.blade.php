@@ -1,21 +1,373 @@
-@extends('layouts.email')
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Bluesmart</title>
+    <style>
+        /* -------------------------------------
+            GLOBAL RESETS
+        ------------------------------------- */
+        img {
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%; }
 
-@section('content')
+        body {
+            background-color: #f6f6f6;
+            font-family: ArialMT, Arial;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%; }
 
-                            <h1>Welcome to Bluesmart!</h1>
+        table {
+            border-collapse: separate;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            width: 100%; }
+        table td {
+            font-family: ArialMT, Arial;
+            font-size: 14px;
+            vertical-align: top; }
 
-<h3>Confirm your e-mail address and start earning rewards today.</h3>
+        /* -------------------------------------
+            BODY & CONTAINER
+        ------------------------------------- */
 
-<p><span style="color: #000000;font-family: helvetica;font-size: 12px;line-height: normal;">Thank you for signing up. Please follow the instructions below to get started.<br>
-<br>
-<strong>Click the link below&nbsp;to confirm your email address:</strong></span><br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<a href="{{ route('auth.confirm', [ $token ]) }}" style="font-family: Helvetica; font-size: 12px; line-height: normal;">{{ route('auth.confirm', [ $token ]) }}</a><span style="color: #000000;font-family: helvetica;font-size: 12px;line-height: normal;">&nbsp;</span><br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<strong><span style="color: #000000;font-family: helvetica;font-size: 12px;line-height: normal;">To check on your referral status and see how many friends signed up via your link, you may bookmark this page:</span></strong><br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<br style="color: #000000;font-family: Helvetica;font-size: 12px;line-height: normal;">
-<a href="{{ route('user.status', [ $secret ]) }}" style="font-family: Helvetica; font-size: 12px; line-height: normal;">{{ route('user.status', [ $secret ]) }}</a><br>
-&nbsp;</p>
+        .body {
+            background-color: #f6f6f6;
+            width: 100%; }
 
-@stop
+        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block;
+            Margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 580px;
+            padding: 10px;
+            width: 580px; }
+
+        /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            box-sizing: border-box;
+            display: block;
+            Margin: 0 auto;
+            max-width: 580px;
+            padding: 10px; }
+
+        /* -------------------------------------
+            HEADER, FOOTER, MAIN
+        ------------------------------------- */
+        .main {
+            background: #fff;
+            border-radius: 3px;
+            width: 100%; }
+
+        .wrapper {
+            box-sizing: border-box;
+            padding: 40px 80px;
+            background-color: black;
+            text-align: center;}
+
+        .footer {
+            clear: both;
+            padding-top: 10px;
+            text-align: center;
+            width: 100%;}
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 0;}
+
+        img.isologo {
+            width: 16px;
+        }
+
+        img.arrow {
+            width: 40px;
+            margin-bottom: -1px;
+        }
+
+        img.header {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* -------------------------------------
+            TYPOGRAPHY
+        ------------------------------------- */
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: white;
+            font-family: ArialMT, Arial;
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 0;
+            margin-bottom: 30px;
+            color: white;}
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;}
+
+        p,
+        ul,
+        ol {
+            font-family: ArialMT, Arial;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+            Margin-bottom: 15px;
+            color: white;}
+        p li,
+        ul li,
+        ol li {
+            list-style-position: inside;
+            margin-left: 5px; }
+
+        p.grey-text {
+            color: #d3d3d3;
+        }
+
+        a {
+            text-decoration: underline;
+            cursor: pointer;}
+
+        /* -------------------------------------
+            BUTTONS
+        ------------------------------------- */
+        .btn {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 40px;}
+        .btn > tbody > tr > td {
+            padding-bottom: 15px; }
+        .btn table {
+            width: auto; }
+        .btn table td {
+            background-color: transparent;
+            text-align: center; }
+        .btn a {
+            background-color: transparent;
+            border: solid 1px white;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+            padding: 12px 10px 12px 25px;
+            text-decoration: none;
+            width: 300px;
+            text-align: right;}
+
+        .btn-primary table td {
+            background-color: transparent }
+
+        .btn-primary a {
+            background-color: transparent;
+            border-color: white;
+            color: #ffffff; }
+
+        /* -------------------------------------
+            OTHER STYLES THAT MIGHT BE USEFUL
+        ------------------------------------- */
+        .last {
+            margin-bottom: 0; }
+
+        .first {
+            margin-top: 0; }
+
+        .align-center {
+            text-align: center; }
+
+        .align-right {
+            text-align: right; }
+
+        .align-left {
+            text-align: left; }
+
+        .clear {
+            clear: both; }
+
+        .mt0 {
+            margin-top: 0; }
+
+        .mb0 {
+            margin-bottom: 0; }
+
+        .preheader {
+            color: transparent;
+            display: none;
+            height: 0;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+            visibility: hidden;
+            width: 0; }
+
+        .powered-by a {
+            text-decoration: none; }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid #f6f6f6;
+            Margin: 20px 0; }
+
+        /* -------------------------------------
+            RESPONSIVE AND MOBILE FRIENDLY STYLES
+        ------------------------------------- */
+        @media only screen and (max-width: 620px) {
+            table[class=body] h1 {
+                font-size: 28px !important;
+                margin-bottom: 10px !important; }
+            table[class=body] p,
+            table[class=body] ul,
+            table[class=body] ol,
+            table[class=body] td,
+            table[class=body] span,
+            table[class=body] a {
+                font-size: 16px !important; }
+            table[class=body] .wrapper,
+            table[class=body] .article {
+                padding: 10px !important; }
+            table[class=body] .content {
+                padding: 0 !important; }
+            table[class=body] .container {
+                padding: 0 !important;
+                width: 100% !important; }
+            table[class=body] .main {
+                border-left-width: 0 !important;
+                border-radius: 0 !important;
+                border-right-width: 0 !important; }
+            table[class=body] .btn table {
+                width: 100% !important; }
+            table[class=body] .btn a {
+                width: 100% !important; }
+            table[class=body] .img-responsive {
+                height: auto !important;
+                max-width: 100% !important;
+                width: auto !important; }}
+
+        /* -------------------------------------
+            PRESERVE THESE STYLES IN THE HEAD
+        ------------------------------------- */
+        @media all {
+            .ExternalClass {
+                width: 100%; }
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%; }
+            .apple-link a {
+                color: inherit !important;
+                font-family: inherit !important;
+                font-size: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+                text-decoration: none !important; }
+            .btn-primary table td:hover {
+                background-color: #34495e !important; }
+            .btn-primary a:hover {
+                background-color: #34495e !important;
+                border-color: #34495e !important; } }
+
+    </style>
+</head>
+<body class="">
+<table border="0" cellpadding="0" cellspacing="0" class="body">
+    <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+            <div class="content">
+
+                <!-- START CENTERED WHITE CONTAINER -->
+                <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+                <table class="main">
+
+                    <!-- START MAIN CONTENT AREA -->
+                    <tr>
+                        <td class="wrapper">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" />
+                                        <img class="header" src="{{ asset('img/email/hero-1.png') }}" />
+                                        <h1>Something new is coming</h1>
+                                        <p>Nearly there! To finish signing up, please click the button below to confirm that we have your email right or try pasting this link into the browser.</p>
+                                        <a href="{{ route('auth.confirm', [ $token ]) }}" target="_blank">{{ route('auth.confirm', [ $token ]) }}</a>
+                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="{{ route('auth.confirm', [ $token ]) }}" target="_blank">
+                                                                    Confirm my email address
+                                                                    <img class="arrow" src="{{ asset('img/arrow.svg') }}" />
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- END MAIN CONTENT AREA -->
+                </table>
+
+                <!-- START FOOTER -->
+                <div class="footer">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="content-block">
+                                <p>Copyright© {{ date('Y') }} Bluesmart. All rights reserved.</p><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="social" src="{{ asset('img/email/icon_fb_1x.png') }}" />
+                                <img class="social" src="{{ asset('img/email/icon_ig_1x.png') }}" />
+                                <img class="social" src="{{ asset('img/email/icon_tw_1x.png') }}" />
+                                <img class="social" src="{{ asset('img/email/icon_yt_1x.png') }}" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- END FOOTER -->
+
+                <!-- END CENTERED WHITE CONTAINER -->
+            </div>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>

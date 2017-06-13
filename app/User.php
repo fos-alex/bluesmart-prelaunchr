@@ -84,8 +84,19 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		$name = $this->name;
 		Mail::queue('emails.confirm', [ 'token' => $this->confirmation_code, 'secret' => $this->referral_secret ], function($message) use ($email, $name) 
 		{
-			$message->to($email, $name)->subject('Welcome to MidwestFit!');
+			$message->to($email, $name)->subject('Please Confirm Your Email');
 		});	
 	}
+
+    public function sendStatusEmail()
+    {
+        $email = $this->email;
+        $name = $this->name;
+        Mail::queue('emails.status', [ 'secret' => $this->referral_secret ], function($message) use ($email, $name)
+        {
+            $message->to($email, $name)->subject('Confirm My Email');
+        });
+
+    }
 
 }

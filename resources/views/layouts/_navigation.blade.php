@@ -4,7 +4,7 @@
 			<div class="col-sm-6">
 				<a class="navbar-brand" href="{{ route('user.create') }}"><img src="{{ asset('img/Bluesmartlogo.png') }}" alt="Bluesmart" /></a>
 			</div>
-			<div class="col-sm-6 text-right">
+			<div class="col-sm-6 text-right hashtag-container">
 				<span class="hashtag">#Travelsmarter</span>
 			</div>
 		</div>

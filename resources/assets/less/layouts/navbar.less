@@ -1,7 +1,9 @@
 .navbar {
-	background-color: transparent;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
 	border: none;
 	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 0;
 
 	img { 
 		max-height: 50px;
@@ -10,14 +12,23 @@
 
 	.navbar-brand {
 		padding-left: 60px;
+		padding-top: 0;
 	}
 
-	.hashtag {
-		color: white;
-		font-family: @font-family-bold;
-		font-weight: bold;
-		line-height: 60px;
-		padding-right: 65px;
+	.hashtag-container {
+		@media(max-width: @screen-xs-max) {
+			text-align: center;
+		}
+		.hashtag {
+			color: white;
+			font-family: @font-family-bold;
+			font-weight: bold;
+			line-height: 60px;
+			padding-right: 65px;
+			@media(max-width: @screen-xs-max) {
+				padding-right: 0;
+			}
+		}		
 	}
 
 	.navbar-hash {

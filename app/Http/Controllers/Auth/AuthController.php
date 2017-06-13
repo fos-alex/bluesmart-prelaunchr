@@ -7,6 +7,7 @@ use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 use Redirect;
+use Mail;
 
 class AuthController extends Controller {
 
@@ -69,10 +70,12 @@ class AuthController extends Controller {
 		{
 			$user->valid_email = true;
 			$user->save();
+            $user->sendStatusEmail();
 
-			flash()->success("Thanks for registering!  You may now begin sharing your referral link to receive rewards.");
+            flash()->success("Thanks for registering!  You may now begin sharing your referral link to receive rewards.");
 
-			return Redirect::route('user.status', [ $user->referral_secret ]);
+
+            return Redirect::route('user.status', [ $user->referral_secret ]);
 		}
 
 		flash()->error("Invalid confirmation code");

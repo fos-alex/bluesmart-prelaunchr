@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Simple Transactional Email</title>
+    <title>Bluesmart</title>
     <style>
         /* -------------------------------------
             GLOBAL RESETS
@@ -15,7 +15,7 @@
 
         body {
             background-color: #f6f6f6;
-            font-family: sans-serif;
+            font-family: ArialMT, Arial;
             -webkit-font-smoothing: antialiased;
             font-size: 14px;
             line-height: 1.4;
@@ -30,7 +30,7 @@
             mso-table-rspace: 0pt;
             width: 100%; }
         table td {
-            font-family: sans-serif;
+            font-family: ArialMT, Arial;
             font-size: 14px;
             vertical-align: top; }
 
@@ -73,6 +73,10 @@
             background-color: black;
             text-align: center;}
 
+        .status-email {
+
+        }
+
         .footer {
             clear: both;
             padding-top: 10px;
@@ -111,7 +115,7 @@
         h3,
         h4 {
             color: white;
-            font-family: sans-serif;
+            font-family: ArialMT, Arial;
             font-weight: 400;
             line-height: 1.4;
             margin: 0;
@@ -119,14 +123,14 @@
             color: white;}
 
         h1 {
-            font-size: 35px;
-            font-weight: 300;
+            font-size: 40px;
+            font-weight: bold;
             text-align: center;}
 
         p,
         ul,
         ol {
-            font-family: sans-serif;
+            font-family: ArialMT, Arial;
             font-size: 14px;
             font-weight: normal;
             margin: 0;
@@ -306,16 +310,16 @@
 
                     <!-- START MAIN CONTENT AREA -->
                     <tr>
-                        <td class="wrapper">
+                        <td class="wrapper status-email">
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
-                                        <img class="isologo" src="{{ asset('img/isologo.svg') }}" />
-                                        <p class="grey-text">{{ date('M d') }}</p>
-                                        <img class="header" src="{{ asset('img/email/header_email_1_1x.jpg') }}" />
-                                        <h1>Something new is coming</h1>
-                                        <p>Nearly there! To finish signing up, please click the button below to confirm that we have your email right or try pasting this link into the browser.</p>
-                                        <a href="http://www.bluesmart.com" target="_blank">http://www.bluesmart.com</a>
+                                        <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" />
+                                        <img class="header" src="{{ asset('img/email/hero-2.png') }}" />
+                                        <h1>You’ll be one  of the first to find out</h1>
+                                        <p>All done! You’re now ready to start sharing your personalized link  with your friends and family via email, Facebook and, Twitter.</p>
+                                        <a href="{{ route('user.status', [ $secret ]) }}" target="_blank">{{ route('user.status', [ $secret ]) }}</a>
+                                        <p>Remember, the more people that sign up using your link, the more special, limited edition gifts you’ll get. </p>
                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                             <tbody>
                                             <tr>
@@ -324,8 +328,8 @@
                                                         <tbody>
                                                         <tr>
                                                             <td>
-                                                                <a href="http://htmlemail.io" target="_blank">
-                                                                    Confirm my email address
+                                                                <a href="{{ route('user.status', [ $secret ]) }}" target="_blank">
+                                                                    Check on your referral status
                                                                     <img class="arrow" src="{{ asset('img/arrow.svg') }}" />
                                                                 </a>
                                                             </td>

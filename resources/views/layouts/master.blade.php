@@ -14,8 +14,8 @@
 
 	@yield('og')
 	<meta property="og:image" content="{{ asset('img/mwf-og-image2.jpg') }}" />
-	<meta property="og:title" content="Bluesmart | Traveling makes you smarter" />
-	<meta property="og:description" content="Bluesmart" />
+	<meta property="og:title" content="Changing the way you travel" />
+	<meta property="og:description" content="Something New is Coming from @bluesmartlabs! Sign up at bluesmart.com to be one of the first to find out. #travelsmarter" />
 	<meta property="og:site_name" content="Bluesmart"/>
 	<meta property="og:type" content="website"/>
 
@@ -24,9 +24,10 @@
     <meta name="twitter:site" content="@Bluesmart" >
     <meta name="twitter:site:id" content="166676493">
     <meta name="twitter:creator" content="@Bluesmart" >
-	
+    <meta name="twitter:title" content="Changing the way you travel" >
+    <meta name="twitter:description" content="Something New is Coming from @bluesmart! Sign up at bluesmart.com to be one of the first to find out. #travelsmarter" >
 
-	<link href="{{ elixir_cachebust('css/app.css') }}" rel="stylesheet">
+    <link href="{{ elixir_cachebust('css/app.css') }}" rel="stylesheet">
 
 	<link rel="SHORTCUT ICON" HREF="{{ asset('img/favicon.png') }}">
 

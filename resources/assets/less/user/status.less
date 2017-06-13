@@ -27,6 +27,9 @@ body.user-status {
 
 		h2 {
 			margin-top: 60px;
+			@media(max-width: @screen-xs-max) {
+				margin-top: 20px;
+			}
 			color: @color-white;
 			font-size: 16px;
 			font-family: @font-family-base;
@@ -34,6 +37,9 @@ body.user-status {
 
 		p.description {
 			margin: 50px 0 60px;
+			@media(max-width: @screen-xs-max) {
+				margin: 20px 0 30px;
+			}
 			color: #898989;
 			font-weight: 300;
 			font-family: @font-family-light;
@@ -211,6 +217,11 @@ body.user-status {
 		.progress {
 			height: 5px;
 			margin-top: 15px;
+
+			@media(max-width: @screen-xs-max) {
+				transform: rotate(90deg) translateY(145px) translateX(200px);
+				width: 360px;
+			}
 			.progress-bar {
 				background-color: @color-primary;
 			}
@@ -223,6 +234,10 @@ body.user-status {
 			.referrals-container > div {
 				padding-right: 10px;
 				padding-left: 10px;
+
+				@media(max-width: @screen-xs-max) {
+					margin-top: 5px;
+				}
 			}
 
 			span, p {
@@ -245,6 +260,9 @@ body.user-status {
 
 			.reward-level {
 				position: relative;
+				@media(max-width: @screen-xs-max) {
+					margin-top: 30px;
+				}
 
 				img {
 					max-width: 40px;
@@ -265,8 +283,13 @@ body.user-status {
 					display: inline-block;
 					position: absolute;
 					top: 63px;
-					z-index: 2;
+					z-index: 1;
 					left: 48px;
+					@media(max-width: @screen-xs-max) {
+						top: 12px;
+						right: -69px;
+						left: inherit;
+					}
 				}
 
 				&.dimmed {
