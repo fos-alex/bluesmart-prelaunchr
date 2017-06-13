@@ -6237,6 +6237,10 @@ button.close {
 }
 .alert {
   margin-bottom: 0px;
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  border: none;
 }
 html {
   height: 100%;
