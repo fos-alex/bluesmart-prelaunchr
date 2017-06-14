@@ -107,6 +107,10 @@
             margin-bottom: 40px;
         }
 
+        img.mail-title {
+            margin-bottom: 15px;
+        }
+
         /* -------------------------------------
             TYPOGRAPHY
         ------------------------------------- */
@@ -315,7 +319,8 @@
                                     <td>
                                         <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" />
                                         <img class="header" src="{{ asset('img/email/hero-2.png') }}" />
-                                        <h1>You’ll be one  of the first to find out</h1>
+                                        {{--<h1>You’ll be one  of the first to find out</h1>--}}
+                                        <img class="mail-title" src="{{ asset('img/email/title-mail-2.png') }}" />
                                         <p>All done! You’re now ready to start sharing your personalized link  with your friends and family via email, Facebook and, Twitter.</p>
                                         <a href="{{ route('user.status', [ $secret ]) }}" target="_blank">{{ route('user.status', [ $secret ]) }}</a>
                                         <p>Remember, the more people that sign up using your link, the more special, limited edition gifts you’ll get. </p>

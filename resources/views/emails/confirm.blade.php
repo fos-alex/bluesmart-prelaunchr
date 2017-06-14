@@ -103,6 +103,10 @@
             margin-bottom: 40px;
         }
 
+        img.mail-title {
+            margin-bottom: 15px;
+        }
+
         /* -------------------------------------
             TYPOGRAPHY
         ------------------------------------- */
@@ -311,7 +315,8 @@
                                     <td>
                                         <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" />
                                         <img class="header" src="{{ asset('img/email/hero-1.png') }}" />
-                                        <h1>Something new is coming</h1>
+                                        <img class="mail-title" src="{{ asset('img/email/title-mail-1.png') }}" />
+                                        {{--<h1>Something new is coming</h1>--}}
                                         <p>Nearly there! To finish signing up, please click the button below to confirm that we have your email right or try pasting this link into the browser.</p>
                                         <a href="{{ route('auth.confirm', [ $token ]) }}" target="_blank">{{ route('auth.confirm', [ $token ]) }}</a>
                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">

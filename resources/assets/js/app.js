@@ -19,7 +19,7 @@ $(function() {
 	}
 
 	$('.scroll-icon').on('click', function () {
-        $("html, body").animate({ scrollTop: $(document).height() });
+        $("html, body").animate({ scrollTop: $(document).height() }, 'slow');
 		return false;
     });
 });	

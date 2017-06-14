@@ -1,4 +1,16 @@
 body.user-status {
+	video {
+		object-fit: fill;
+		min-height: 720px;
+		width: 100%;
+		overflow-x: hidden;
+		display: block;
+	}
+	@media(max-width: @screen-sm-max) {
+		video {
+			display: none;
+		}
+	}
 
 	header {
 		background: url('/img/BG-2.png');
@@ -9,6 +21,13 @@ body.user-status {
 		}
 		@media(max-width: @screen-xs-max) {
 			background-position-y: -120%;
+		}
+		@media(min-width: @screen-sm-max) {
+			.container {
+				position: absolute;
+				top: 1px;
+			}
+			overflow-x: hidden;
 		}
 		background-repeat: no-repeat;
 		background-color: black;
@@ -63,6 +82,9 @@ body.user-status {
 			font-size: 14px;
 			padding: 12px 45px;
 			color: white;
+			@media(max-width: @screen-xs-max) {
+				padding: 12px 30px;
+			}
 		}
 
 		p.copy {
@@ -146,6 +168,9 @@ body.user-status {
 
 		.scroll-icon {
 			cursor: pointer;
+			@media(max-width: @screen-xs-max) {
+				display: none;
+			}
 		}
 
 		.isologo-icon {
@@ -219,8 +244,8 @@ body.user-status {
 			margin-top: 15px;
 
 			@media(max-width: @screen-xs-max) {
-				transform: rotate(90deg) translateY(145px) translateX(200px);
-				width: 360px;
+				transform: rotate(90deg) translateY(289px) translateX(350px);
+				width: 650px;
 			}
 			.progress-bar {
 				background-color: @color-primary;
@@ -236,7 +261,7 @@ body.user-status {
 				padding-left: 10px;
 
 				@media(max-width: @screen-xs-max) {
-					margin-top: 5px;
+					margin-top: 41px;
 				}
 			}
 
@@ -261,7 +286,7 @@ body.user-status {
 			.reward-level {
 				position: relative;
 				@media(max-width: @screen-xs-max) {
-					margin-top: 30px;
+					margin-top: 70px;
 				}
 
 				img {
@@ -292,6 +317,10 @@ body.user-status {
 					}
 				}
 
+				.blue-dot {
+					background-color: @color-primary;
+				}
+
 				&.dimmed {
 					span {
 						color: @color-darkergrey;
@@ -302,6 +331,7 @@ body.user-status {
 					}
 
 					.blue-dot {
+						background-color: transparent;
 						filter: opacity(20%);
 					}
 				}
