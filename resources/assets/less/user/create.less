@@ -18,6 +18,9 @@ body.user-create {
 		background: url('/img/main-bg-1.jpg') center center no-repeat fixed;
 		background-size: cover;
 		background-color: black;
+
+		display: flex;
+		justify-content: center;
 		@media(max-width: @screen-md-max) {
 			background-size: contain;
 		}
@@ -78,6 +81,10 @@ body.user-create {
 			span.error {
 				display: block;
 				margin-bottom: 5px;
+			}
+
+			div.error {
+				color: #a94442;
 			}
 
 			input {

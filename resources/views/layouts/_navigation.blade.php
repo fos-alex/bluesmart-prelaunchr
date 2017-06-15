@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top">
+	@include('flash::message')
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-6">

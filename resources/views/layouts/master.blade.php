@@ -13,17 +13,18 @@
     <title>Bluesmart | Traveling makes you smarter</title>
 
 	@yield('og')
-	<meta property="og:image" content="{{ asset('img/mwf-og-image2.jpg') }}" />
+	<meta property="og:image" content="{{ asset('share/facebook.jpg') }}" />
 	<meta property="og:title" content="Changing the way you travel" />
 	<meta property="og:description" content="Something New is Coming from @bluesmartlabs! Sign up at bluesmart.com to be one of the first to find out. #travelsmarter" />
-	<meta property="og:site_name" content="Bluesmart"/>
+	<meta property="og:site_name" content="bluesmartlabs"/>
 	<meta property="og:type" content="website"/>
 
     <meta name="twitter:card" content="summary" >
-    <meta name="twitter:domain" content="Bluesmart.com" >
-    <meta name="twitter:site" content="@Bluesmart" >
-    <meta name="twitter:site:id" content="166676493">
-    <meta name="twitter:creator" content="@Bluesmart" >
+    <meta name="twitter:domain" content="bluesmart.com" >
+    <meta name="twitter:site" content="@bluesmart" >
+    <meta name="twitter:site:id" content="2299103580">
+    <meta name="twitter:creator" content="@bluesmart" >
+    <meta name="twitter:image" content="{{ asset('share/twitter.jpg') }}" >
     <meta name="twitter:title" content="Changing the way you travel" >
     <meta name="twitter:description" content="Something New is Coming from @bluesmart! Sign up at bluesmart.com to be one of the first to find out. #travelsmarter" >
 
@@ -39,21 +40,24 @@
     <![endif]-->
 
 	@if (app()->env == 'production')
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-55882147-6', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-M278PC');</script>
+        <!-- End Google Tag Manager -->
 	@endif
 
 </head>
 
 <body class="@yield('body-class')">
+    @if (app()->env == 'production')
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M278PC"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->​
+    @endif
 
 	@include('layouts._facebook')
 
