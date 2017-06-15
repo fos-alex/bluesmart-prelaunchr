@@ -47,17 +47,14 @@
             })(window,document,'script','dataLayer','GTM-M278PC');</script>
         <!-- End Google Tag Manager -->
 	@endif
-
 </head>
 
 <body class="@yield('body-class')">
     @if (app()->env == 'production')
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M278PC"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->​
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M278PC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
     @endif
-
 	@include('layouts._facebook')
 
 	@yield('content')
