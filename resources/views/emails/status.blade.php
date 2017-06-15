@@ -125,10 +125,10 @@
                         </tr>
                         <tr>
                             <td style="font-family:ArialMT, Arial;font-size:14px;vertical-align:top;font-size:12px;text-align:center;color:black;margin-top:10px;margin-bottom:0;">
-                                <img class="social" src="{{ asset('img/email/icon_fb_1x.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
-                                <img class="social" src="{{ asset('img/email/icon_ig_1x.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
-                                <img class="social" src="{{ asset('img/email/icon_tw_1x.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
-                                <img class="social" src="{{ asset('img/email/icon_yt_1x.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
+                                <a href="https://www.facebook.com/bluesmartlabs/" target="_blank"><img class="social" src="{{ asset('img/email/icon_fb_1x.png') }}" /></a>
+                                <a href="https://www.instagram.com/bluesmart/" target="_blank"><img class="social" src="{{ asset('img/email/icon_ig_1x.png') }}" /></a>
+                                <a href="https://twitter.com/bluesmart" target="_blank"><img class="social" src="{{ asset('img/email/icon_tw_1x.png') }}" /></a>
+                                <a href="https://www.youtube.com/user/bluesmartlabs" target="_blank"><img class="social" src="{{ asset('img/email/icon_yt_1x.png') }}" /></a>
                             </td>
                         </tr>
                     </table>

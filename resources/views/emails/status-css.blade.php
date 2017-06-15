@@ -362,10 +362,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <img class="social" src="{{ asset('img/email/icon_fb_1x.png') }}" />
-                                <img class="social" src="{{ asset('img/email/icon_ig_1x.png') }}" />
-                                <img class="social" src="{{ asset('img/email/icon_tw_1x.png') }}" />
-                                <img class="social" src="{{ asset('img/email/icon_yt_1x.png') }}" />
+                                <a href="https://www.facebook.com/bluesmartlabs/" target="_blank"><img class="social" src="{{ asset('img/email/icon_fb_1x.png') }}" /></a>
+                                <a href="https://www.instagram.com/bluesmart/" target="_blank"><img class="social" src="{{ asset('img/email/icon_ig_1x.png') }}" /></a>
+                                <a href="https://twitter.com/bluesmart" target="_blank"><img class="social" src="{{ asset('img/email/icon_tw_1x.png') }}" /></a>
+                                <a href="https://www.youtube.com/user/bluesmartlabs" target="_blank"><img class="social" src="{{ asset('img/email/icon_yt_1x.png') }}" /></a>
                             </td>
                         </tr>
                     </table>
