@@ -313,7 +313,7 @@
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
-                                        <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" />
+                                        <img class="" src="{{ asset('img/email/bluesmart-logo.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
                                         <img class="header" src="{{ asset('img/email/hero-1.png') }}" />
                                         <img class="mail-title" src="{{ asset('img/email/title-mail-1.png') }}" />
                                         {{--<h1>Something new is coming</h1>--}}
@@ -329,7 +329,7 @@
                                                             <td>
                                                                 <a href="{{ route('auth.confirm', [ $token ]) }}" target="_blank">
                                                                     Confirm my email address
-                                                                    <img class="arrow" src="{{ asset('img/arrow.svg') }}" />
+                                                                    <img class="arrow" src="{{ asset('img/email/arrow-white.png') }}" />
                                                                 </a>
                                                             </td>
                                                         </tr>

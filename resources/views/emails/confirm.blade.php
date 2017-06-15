@@ -80,7 +80,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;">
                                 <tr>
                                     <td style="font-family:ArialMT, Arial;font-size:14px;vertical-align:top;">
-                                        <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
+                                        <img class="" src="{{ asset('img/email/bluesmart-logo.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
                                         <img class="header" src="{{ asset('img/email/hero-1.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;width:100%;margin-top:20px;margin-bottom:40px;"/>
                                         <img class="mail-title" src="{{ asset('img/email/title-mail-1.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;margin-bottom:15px;"/>
 
@@ -96,7 +96,7 @@
                                                             <td style="font-family:ArialMT, Arial;font-size:14px;vertical-align:top;text-align:center;background-color:transparent;">
                                                                 <a href="{{ route('auth.confirm', [ $token ]) }}" target="_blank" style="text-decoration:underline;border:solid 1px white;box-sizing:border-box;color:white;cursor:pointer;display:inline-block;font-size:14px;font-weight:bold;margin:0;padding:12px 10px 12px 25px;text-decoration:none;width:300px;text-align:right;background-color:transparent;border-color:white;color:#ffffff;">
                                                                     Confirm my email address
-                                                                    <img class="arrow" src="{{ asset('img/arrow.svg') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;width:40px;margin-bottom:-1px;"/>
+                                                                    <img class="arrow" src="{{ asset('img/email/arrow-white.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;width:40px;margin-bottom:-1px;"/>
                                                                 </a>
                                                             </td>
                                                         </tr>

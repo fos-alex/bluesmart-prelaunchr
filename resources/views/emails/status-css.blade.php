@@ -317,7 +317,7 @@
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
-                                        <img class="" src="{{ asset('img/email/bluesmart-logo.svg') }}" />
+                                        <img class="" src="{{ asset('img/email/bluesmart-logo.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;"/>
                                         <img class="header" src="{{ asset('img/email/hero-2.png') }}" />
                                         {{--<h1>You’ll be one  of the first to find out</h1>--}}
                                         <img class="mail-title" src="{{ asset('img/email/title-mail-2.png') }}" />
@@ -334,7 +334,7 @@
                                                             <td>
                                                                 <a href="{{ route('user.status', [ $secret ]) }}" target="_blank">
                                                                     Check on your referral status
-                                                                    <img class="arrow" src="{{ asset('img/arrow.svg') }}" />
+                                                                    <img class="arrow" src="{{ asset('img/email/arrow-white.png') }}" />
                                                                 </a>
                                                             </td>
                                                         </tr>
