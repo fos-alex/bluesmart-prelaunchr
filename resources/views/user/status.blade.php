@@ -25,7 +25,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12">
+						<div class="col-xs-12 no-gutter-mobile">
 							<p class="center">
 								<span class="linktext">{{ $user->referral_url }}</span>
 							</p>
