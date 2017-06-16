@@ -17,8 +17,6 @@ body.user-status {
 		background-position-x: 35%;
 		background-position-y: -120%;
 
-		display: flex;
-		justify-content: center;
 		@media(max-width: @screen-sm-max) {
 			background-position-y: -130%;
 		}
@@ -28,6 +26,8 @@ body.user-status {
 		@media(min-width: @screen-sm-max) {
 			.container {
 				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0);
 				top: 1px;
 			}
 			overflow-x: hidden;

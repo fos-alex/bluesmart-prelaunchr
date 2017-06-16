@@ -19,8 +19,8 @@ body.user-create {
 		background-size: cover;
 		background-color: black;
 
-		display: flex;
-		justify-content: center;
+/*		display: flex;
+		justify-content: center;*/
 		@media(max-width: @screen-md-max) {
 			background-size: contain;
 		}
@@ -33,6 +33,8 @@ body.user-create {
 		@media(min-width: @screen-sm-max) {
 			.container {
 				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0);
 				top: 1px;
 			}
 			overflow-x: hidden;
