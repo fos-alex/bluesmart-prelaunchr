@@ -60,10 +60,10 @@
                 line-height: inherit !important;
                 text-decoration: none !important; }
             .btn-primary table td:hover {
-                background-color: #34495e !important; }
+                background-color: #2349EC !important; }
             .btn-primary a:hover {
-                background-color: #34495e !important;
-                border-color: #34495e !important; } }
+                background-color: #2349EC !important;
+                border-color: #2349EC !important; } }
     </style>
 </head>
 <body class="" style="background-color:#f6f6f6;font-family:ArialMT, Arial;-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.4;margin:0;padding:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">

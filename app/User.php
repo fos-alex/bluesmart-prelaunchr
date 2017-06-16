@@ -94,7 +94,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $name = $this->name;
         Mail::queue('emails.status', [ 'secret' => $this->referral_secret ], function($message) use ($email, $name)
         {
-            $message->to($email, $name)->subject('Confirm My Email');
+            $message->to($email, $name)->subject('Email Confirmed. Start Sharing!');
         });
 
     }

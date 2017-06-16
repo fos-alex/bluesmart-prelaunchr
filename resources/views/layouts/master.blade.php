@@ -12,10 +12,10 @@
     <title>Bluesmart | Traveling makes you smarter</title>
 
 	@yield('og')
-	<meta property="og:image" content="{{ asset('img/share/facebook.jpg') }}" />
+	<meta property="og:image" itemprop="image" content="{{ asset('img/share/facebook.jpg') }}" />
 	<meta property="og:title" content="Changing the way you travel" />
-	<meta property="og:description" content="Something New is Coming from @bluesmartlabs! Sign up at bluesmart.com to be one of the first to find out. #travelsmarter" />
-	<meta property="og:site_name" content="bluesmartlabs"/>
+	<meta property="og:description" content="Something New is Coming from @bluesmartlabs! Sign up at bluesmart.com to find out first & get up to 60% OFF on launch day! #travelsmarter​" />
+	<meta property="og:site_name" content="Bluesmart"/>
 	<meta property="og:type" content="website"/>
 
     <meta name="twitter:card" content="summary" >
@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="@bluesmart" >
     <meta name="twitter:image" content="{{ asset('img/share/twitter.jpg') }}" >
     <meta name="twitter:title" content="Changing the way you travel" >
-    <meta name="twitter:description" content="Something New is Coming from @bluesmart! Sign up at bluesmart.com to be one of the first to find out. #travelsmarter" >
+    <meta name="twitter:description" content="Something New is Coming from @bluesmart! Sign up at bluesmart.com to find out first & get up to 60% OFF on launch day!" >
 
     <link href="{{ elixir_cachebust('css/app.css') }}" rel="stylesheet">
 
