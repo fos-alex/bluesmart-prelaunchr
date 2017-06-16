@@ -123,18 +123,18 @@ class UsersController extends Controller {
 		// this is a little sloppy.. should be cleaned up
 		//$highest_referral_number = $rewards->last()->num_referrals;
 		//$progress_percent = (100 / ($highest_referral_number + 2)) * ($referral_count + 1) + $referral_count;
-		if ($referral_count < 10) {
-		    $progress_percent = $referral_count * 1.428571429;
-        } else if ($referral_count < 15) {
-            $progress_percent = 14.28571429 + ($referral_count - 10) * 1.428571429;
-        } else if ($referral_count < 25) {
-            $progress_percent = 14.28571429 * 2 + ($referral_count - 15) * 2.857142857;
-        } else if ($referral_count < 50) {
-            $progress_percent = 14.28571429 * 3 + ($referral_count - 25) * 1.428571429;
-        } else if ($referral_count < 100) {
-            $progress_percent = 14.28571429 * 4 + ($referral_count - 50) * 0.2857142857;
-        } else if ($referral_count < 200) {
-            $progress_percent = 14.28571429 * 5 + ($referral_count - 100) * 0.1428571429;
+		if ($referral_count <= 10) {
+		    $progress_percent = $referral_count * 1.52;
+        } else if ($referral_count <= 15) {
+            $progress_percent = 1 + 14.28571429 + ($referral_count - 5) * 1.428571429;
+        } else if ($referral_count <= 25) {
+            $progress_percent = 1 + 14.28571429 * 2 + ($referral_count - 15) * 1.428571429;
+        } else if ($referral_count <= 50) {
+            $progress_percent = 14.28571429 * 3 + ($referral_count - 25) * 0.571428572;
+        } else if ($referral_count <= 100) {
+            $progress_percent = 14.28571429 * 4 + ($referral_count - 50) * 0.2757142857;
+        } else if ($referral_count <= 200) {
+            $progress_percent = 14.28571429 * 5 + ($referral_count - 100) * 0.1328571429;
         } else {
             $progress_percent = 14.28571429 * 6 + ($referral_count - 200) * 0.04761904762;
         }
