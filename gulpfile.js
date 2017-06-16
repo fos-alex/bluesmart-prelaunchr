@@ -18,7 +18,6 @@ elixir(function(mix) {
 	mix.scripts([
 		"lib/bootstrap.min.js",
 		"lib/jquery.placeholder.min.js",
-		"lib/ZeroClipboard.js",
         "lib/jquery.modal.js",
 		"app.js"
 	]);
