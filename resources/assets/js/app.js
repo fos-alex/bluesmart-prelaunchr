@@ -6,17 +6,6 @@ $(function() {
 	});
 
 	if ($("#copy-button").length) {
-
-/*		ZeroClipboard.config({ swfPath: window.ZCPath });
-		var client = new ZeroClipboard(document.getElementById('copy-button'));
-
-		client.on('ready', function(readyEvent) { 
-			client.on('aftercopy', function(event) {
-				$("#copy-confirmation").fadeIn();
-				$("#copy-confirmation").fadeOut();
-			});
-		});*/
-
         var clip = new Clipboard('#copy-button');
         clip.on('success', function(readyEvent) {
 			$("#copy-confirmation").fadeIn();
@@ -26,6 +15,10 @@ $(function() {
 
     if (!Clipboard.isSupported()) {
 		$('#copy-button').hide();
+	}
+
+	if ($('.alert').length > 0 && jQuery(window).width() < 768) {
+		$('header').css({'margin-top': $('.alert').height()});
 	}
 
 

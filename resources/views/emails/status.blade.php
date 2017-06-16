@@ -84,7 +84,7 @@
                                         <img class="header" src="{{ asset('img/email/hero-2.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;width:100%;margin-top:20px;margin-bottom:40px;"/>
                                         <img class="mail-title" src="{{ asset('img/email/title-mail-2.png') }}" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;margin-bottom:15px;"/>
 
-                                        <p style="font-family:ArialMT, Arial;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;color:white;">All done! You’re now ready to start sharing your personalized link  with your friends and family via email, Facebook and, Twitter.</p>
+                                        <p style="font-family:ArialMT, Arial;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;color:white;">All done! You're now ready to start sharing your personalized link with your friends and family via email, Facebook and Twitter.</p>
                                         <a href="{{ route('user.status', [ $secret ]) }}" target="_blank" style="text-decoration:underline;cursor:pointer;">{{ route('user.status', [ $secret ]) }}</a>
                                         <p style="font-family:ArialMT, Arial;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;color:white;">Remember, the more people that sign up using your link, the more special, limited edition gifts you’ll get. </p>
                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:separate;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;margin-top:40px;">

@@ -40,7 +40,7 @@ class UsersController extends Controller {
 	 */
 	public function create()
 	{
-		// forget the referral secret if user ends up back on the homepage
+        // forget the referral secret if user ends up back on the homepage
 		Session::forget(Config::get('prelaunch.session:referral_secret'));
 
 		return view('user.create');
@@ -103,7 +103,8 @@ class UsersController extends Controller {
 	 */
 	public function status($referral_secret = null)
 	{
-		if ($referral_secret)
+
+        if ($referral_secret)
 		{ 
 			Session::put(Config::get('prelaunch.session:referral_secret'), $referral_secret);
 		}

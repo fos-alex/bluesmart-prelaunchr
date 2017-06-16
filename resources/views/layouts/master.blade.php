@@ -62,12 +62,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 
-	<script type="text/javascript">
-		/*$(function() {
-			window.ZCPath = "{{ asset('ZeroClipboard.swf') }}";
-		});*/
-	</script>
-
     <script src="{{ elixir_cachebust('js/all.js') }}"></script>
 
 

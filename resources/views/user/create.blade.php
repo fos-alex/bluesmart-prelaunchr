@@ -12,7 +12,7 @@
 
 	<header>
 		<video id="home-video" preload="none" autoplay="autoplay" loop="loop">
-			<source src="{{ asset('img/video.mp4') }}" width="1000" height="1000" type="video/mp4" />
+			<source src="//web-static.bluesmart.com/videos/FullSet_Empty.mp4" width="1000" height="1000" type="video/mp4" />
 		</video>
 		<div class="container main-container">
 			<div class="row">
