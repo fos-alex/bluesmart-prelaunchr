@@ -31,7 +31,15 @@
 					<div class="col-xs-10 col-xs-offset-1">
 						<p class="center share-text">
 							In 2014, we created the world’s first smart suitcase and changed the way you travel.<br>
-							You traveled with it, we listened, and now...well, we can’t tell you that just yet. Sign up to be the first to find out, unlock special prices, and access limited edition gifts for free.
+							You traveled with it, we listened, and now...well, we can’t tell you that just yet. Sign up to be the first to find out, unlock special prices, and access limited edition gifts when you buy any Bluesmart product after launch day.
+						</p>
+						<p class="center disclaimer-text">
+							You can still buy our
+							<a class="" href="https://www.amazon.com/Bluesmart-One-International-Carry-TSA-Approved/dp/B00X5OUC1U" target="_blank">Bluesmart One</a>
+							and
+							<a class="resend" href="https://www.amazon.com/Bluesmart-Black-Edition-International-Luggage/dp/B01IH8ZTVQ" target="_blank">Black Edition</a>
+							at Amazon.com. For support related questions, please visit our
+							<a class="resend" href="https://bluesmart.zendesk.com/hc/en-us" target="_blank">Help Center</a>.
 						</p>
 					</div>
 				</div>
@@ -64,7 +72,11 @@
 						"Cookies" are pieces of information that a website transfers to your computer's hard disk for record-keeping purposes. Cookies in and of themselves do not personally identify users, although they do identify a user's computer. You may be able to set your web browser to refuse cookies.<br>
 
 						<br><br><strong>Claiming Referral Items</strong><br>
-						You will only be eligible to claim the Bluesmart Tee and/or Bluesmart Hoodie based on the number of people you have referred, after purchasing any of our Bluesmart products.<br>
+						The referral status bar on our pre-launch site is only for illustrative purposes. The final count of valid referrals will be performed by Bluesmart. The user will be notified of the the final count results by Bluesmart following the pre-launch.<br>
+
+						You will only be eligible to claim the Bluesmart Tee and/or Bluesmart Hoodie based on the number of people you have referred, after purchasing any of our Bluesmart products. All referral items and rewards are exclusive and not accumulative.<br>
+
+						If you qualify for a referral reward after having purchased any of our Bluesmart products, we will only ship it to you if live in the following countries (this is due to shippings & custom fees): Argentina, Australia, Austria, Belgium, Bulgaria, Canada, China, Croatia, Cyprus, Czech Republic, Denmark, Estonia, EU, Finland, France, Germany, Greece, Hong Kong, Hungary, Ireland, Italy, Japan, Korea, Latvia, Lithuania, Luxembourg, Malta, Netherlands, New Zealand, Norway, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Arab Emirates, United Kingdom, United States.<br>
 
 						<br><br><strong>Opt-Out.</strong><br>
 						If you change your mind about Bluesmart use of User Data volunteered by you, you may Bluesmart send an email to support@bluesmart.com with your electronic mail address.<br>
